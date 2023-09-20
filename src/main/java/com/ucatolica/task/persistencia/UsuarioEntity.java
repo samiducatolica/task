@@ -201,4 +201,26 @@ public class UsuarioEntity {
     public int hashCode() {
         return Objects.hash(idusuario, idrol, primerNombre, segundoNombre, primerApellido, movil, email, passwordhash, fechaDeRegistro, fechaUltimoLogin, detalles, intentos, fechaBloqueo, idestado, segundoApellido);
     }
+
+    @Override
+    public String toString() {
+        return "UsuarioEntity{" +
+                "idusuario=" + idusuario +
+                ", idrol=" + idrol +
+                ", primerNombre='" + primerNombre + '\'' +
+                ", segundoNombre='" + segundoNombre + '\'' +
+                ", primerApellido='" + primerApellido + '\'' +
+                ", segundoApellido='" + segundoApellido + '\'' +
+                ", movil='" + movil + '\'' +
+                ", email='" + email + '\'' +
+                ", passwordhash='" + passwordhash + '\'' +
+                ", fechaDeRegistro=" + fechaDeRegistro +
+                ", fechaUltimoLogin=" + fechaUltimoLogin +
+                ", detalles='" + detalles + '\'' +
+                ", intentos=" + intentos +
+                ", fechaBloqueo=" + fechaBloqueo +
+                ", idestado=" + idestado +
+
+                '}';
+    }
 }
